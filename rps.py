@@ -15,18 +15,15 @@ print('\nHello')
 numberOfgames = int(input('Let\'s play the best out of '))
 scoreLimit = math.ceil(numberOfgames/2)
 
-
-print(scoreLimit)
-
 while scorePlayer is not scoreLimit or scorePlayer is not scoreLimit:
 
-    randompPick = random.choice([r,p,s])
+    randomPick = random.choice([r,p,s])
     player = input('\nChoose between Rock, Paper, and Scisors:   ')
-    print(randompPick)
-    condition1 = player.lower() == r.lower() and randompPick.lower() == s.lower()
-    condition2 = player.lower() == p.lower() and randompPick.lower() == r.lower()
-    condition3 = player.lower() == s.lower() and randompPick.lower() == p.lower()
-    condition4 = player.lower() == randompPick.lower()
+    print(randomPick)
+    condition1 = player.lower() == r.lower() and randomPick.lower() == s.lower()
+    condition2 = player.lower() == p.lower() and randomPick.lower() == r.lower()
+    condition3 = player.lower() == s.lower() and randomPick.lower() == p.lower()
+    condition4 = player.lower() == randomPick.lower()
 
 
     if condition4 is True:
@@ -39,4 +36,4 @@ while scorePlayer is not scoreLimit or scorePlayer is not scoreLimit:
         print('You loose!\n---')
         scorePC += 1
         print(scoreMsg.format(scorePlayer,scorePC))
-print('\nThe final tally is ', scoreMsg.format(scorePlayer,scorePC))
+print('\nThe final tally is ', scoreMsg.format(scorePlayer,scorePC))    
